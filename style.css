@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(36, 100%, 99%);
+  font-family: "Inter", sans-serif;
+}
+.main-container {
+  width: 375px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  outline: 1px solid black;
+}
+nav {
+  width: 375px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > img {
+  width: 50px;
+}
+.hamburger:hover {
+  cursor: pointer;
+}
+.content-body > .img-container {
+  width: 375px;
+  height: 375px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("assets/images/image-web-3-mobile.jpg");
+}
+.content-body > h1 {
+  font-weight: 800;
+  font-size: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 50px;
+}
+.content-body > p {
+  font-weight: 400;
+  font-size: 15px;
+  color: hsl(236, 13%, 42%);
+  line-height: 23px;
+  padding-bottom: 20px;
+}
+.content-body > button {
+  background-color: hsl(5, 85%, 63%);
+  color: hsl(36, 100%, 99%);
+  width: 170px;
+  height: 50px;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+.content-body > button:hover {
+  cursor: pointer;
+  background-color: hsl(240, 100%, 5%);
+}
+
+.news-box {
+  width: 345px;
+  background-color: hsl(240, 100%, 5%);
+  color: hsl(36, 100%, 99%);
+  margin-top: 60px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.news-box > h1 {
+  padding-top: 20px;
+  color: hsl(35, 77%, 62%);
+  font-size: 30px;
+}
+.news-box > ul > li {
+  list-style: none;
+}
+.news-box > ul > li > h3 {
+  padding-bottom: 10px;
+  padding-top: 30px;
+  font-weight: 700;
+}
+.news-box > ul > li > h3 > a {
+  text-decoration: none;
+  color: hsl(36, 100%, 99%);
+}
+.news-box > ul > li > h3 > a:hover {
+  cursor: pointer;
+  color: hsl(35, 77%, 62%);
+  text-decoration: none;
+}
+.news-box > ul > li > p {
+  padding-bottom: 30px;
+  line-height: 25px;
+  color: hsl(233, 8%, 79%);
+}
+hr {
+  color: hsl(236, 13%, 42%);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.carousel > div > img {
+  width: 100px;
+}
+.card-1,
+.card-2,
+.card-3 {
+  width: 375px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.textbox {
+  padding-left: 20px;
+  line-height: 33px;
+}
+.textbox > h1 {
+  color: hsl(233, 8%, 79%);
+  font-size: 30px;
+  font-weight: 700;
+}
+.textbox > h3 {
+  color: hsl(240, 100%, 5%);
+}
+.textbox > h3 > a {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+.textbox > h3 > a:hover {
+  text-decoration: none;
+  cursor: pointer;
+  color: hsl(5, 85%, 63%);
+}
+.textbox > p {
+  color: hsl(236, 13%, 42%);
+}
+
+/* desktop design */
+@media (min-width: 768px) {
+  .main-container {
+    width: 75%;
+    height: auto;
+    padding-left: 100px;
+    padding-right: 100px;
+    outline: 1px solid black;
+  }
+  nav {
+    width: 75%;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .content-body > .img-container {
+    background-image: url("assets/images/image-web-3-desktop.jpg");
+    width: 300px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+  }
+  .carousel {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+  }
+}
+
+/* <img src="assets/images/image-web-3-mobile.jpg" alt="web3mobile" /> */

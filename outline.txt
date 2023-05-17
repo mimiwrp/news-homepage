@@ -1,0 +1,66 @@
+<nav>
+    <svg>logo</svg>
+    <ham menu>
+        <ul>
+            <btn>X</btn>[Close logo appear when mobile only]
+            <li>Home >> [have active hover over]</li>
+            <li>New</li>
+            ...
+        </ul>
+    </ham menu>
+</nav>
+
+<content>
+    <firstpart> [use grid when web : use flex box column when mobile]
+        <img web 3> [when web : use pic 1, mobile : use pic 2]
+        <div head>The Bright <br>Future of <br when web>Web<br when mobile> 3.0?</div head>
+        <p>We dive into...<p> [padding button smaller when mobile]
+        <btn>READ MORE</btn>
+        <new box> [same when mobile and when desktop]
+            <h2>New</h2>
+            <ul>
+                <li>
+                    <bold head>Hydrogen ...</bold head>
+                    <p>Will hydrogen...</p>
+                </li>
+                <li>
+                    <bold head>The Downsides of AI...</bold head>
+                    <p>What are the ...</p>
+                </li>
+                <li>
+                    <bold head>Is VC Funding...</bold head>
+                    <p>Private funding...</p>
+                </li>
+            </ul>
+        </new box>
+    </firstpart>
+
+    <courasel> [flex box; web : row, mobile : column]
+        <01 comp>
+            <grid comp>
+                <img>
+                <h1>01</h1>
+                <h3>Reviving ...</h3>
+                <p>What happens...</p>
+            </grid comp>
+        </01 comp>
+
+        <02 comp>
+            <grid comp>
+                <img>
+                <h1>02</h1>
+                <h3>Top 10 ...</h3>
+                <p>Our best...</p>
+            </grid comp>
+        </02 comp>
+
+        <03 comp>
+            <grid comp>
+                <img>
+                <h1>03</h1>
+                <h3>The Growth ...</h3>
+                <p>How thes...</p>
+            </grid comp>
+        </03 comp>
+    </courasel>
+</content>
