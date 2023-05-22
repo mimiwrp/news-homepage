@@ -13,7 +13,7 @@ body {
   padding-right: 15px;
   padding-top: 30px;
   padding-bottom: 30px;
-  outline: 1px solid black;
+
 }
 nav {
   width: 375px;
@@ -28,6 +28,12 @@ nav > img {
 .hamburger:hover {
   cursor: pointer;
 }
+.hidden-nav {
+  display: none;
+}
+/* .close-icon {
+  display: none;
+} */
 .content-body > .img-container {
   width: 375px;
   height: 375px;
@@ -42,14 +48,14 @@ nav > img {
   padding-bottom: 20px;
   line-height: 50px;
 }
-.content-body > p {
+.content-body > .txt-container > p {
   font-weight: 400;
   font-size: 15px;
   color: hsl(236, 13%, 42%);
   line-height: 23px;
   padding-bottom: 20px;
 }
-.content-body > button {
+.content-body > .txt-container > button {
   background-color: hsl(5, 85%, 63%);
   color: hsl(36, 100%, 99%);
   width: 170px;
@@ -58,8 +64,11 @@ nav > img {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 700;
+  margin: 20px;
+  margin-left: 0;
+  margin-bottom: 60px;
 }
-.content-body > button:hover {
+.content-body > .txt-container > button:hover {
   cursor: pointer;
   background-color: hsl(240, 100%, 5%);
 }
@@ -68,7 +77,7 @@ nav > img {
   width: 345px;
   background-color: hsl(240, 100%, 5%);
   color: hsl(36, 100%, 99%);
-  margin-top: 60px;
+  margin-top: 0px;
   padding-left: 15px;
   padding-right: 15px;
 }
@@ -149,31 +158,72 @@ hr {
 /* desktop design */
 @media (min-width: 768px) {
   .main-container {
-    width: 75%;
-    height: auto;
-    padding-left: 100px;
-    padding-right: 100px;
-    outline: 1px solid black;
+    margin: 0 auto; 
+    width: 960px;
   }
   nav {
-    width: 75%;
+    width: 100%;
     padding-bottom: 30px;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  .hamburger {
+    visibility: hidden;
+  }
+  .hidden-nav {
+    display:contents;
+  }
+  .close-icon {
+    visibility: hidden;
+  }
+  .hidden-nav > .menu > ul {
+    visibility:visible;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    color: hsl(236, 13%, 42%);
+    width: 400px;
+  }
+  .hidden-nav > .menu > ul > li > a:hover {
+    cursor: pointer;
+    color:hsl(5, 85%, 63%);
+  }
+  .content-body {
+    display: grid;
+    grid-template-areas: 'img img news'
+    'h1 txt news';
+  }
   .content-body > .img-container {
     background-image: url("assets/images/image-web-3-desktop.jpg");
-    width: 300px;
-    height: 100px;
-    background-size: cover;
-    background-position: center;
+    width: 590px;
+    height: 280px;
+    max-width: 100%;
+    max-height: 100%;
+    grid-area: img;
+  }
+  .content-body > h1 {
+    grid-area: h1;
+  }
+  .content-body > .txt-container {
+    grid-area: txt;
+    padding-top: 20px;
+  }
+  .content-body > .news-box {
+    grid-area: news;
+    width: 320px;
   }
   .carousel {
     display: flex;
     flex-direction: row;
     margin-top: 50px;
   }
+  .textbox {
+    font-size: 1vw;
+  }
+
 }
 
 /* <img src="assets/images/image-web-3-mobile.jpg" alt="web3mobile" /> */
